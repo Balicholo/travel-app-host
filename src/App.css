@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background-color: rgb(255, 232, 209);
+}
+.navbar {
+  background-color: rgb(255, 232, 209); 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (max-width: 354px) {
+    font-size: 12px;
+  }
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.nav-links a:hover{
+  border-bottom: 2px solid rgb(95, 95, 95);
+  transition: 2s;
+}
+.active-link{
+  text-decoration: underline;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  /* width: 100%;
+  position: absolute;
+  bottom: 0; */
+}
+.footer p {
+  font-size: 15px;
+}
+/* ABOUT-PAGE */
+.unavailable-page{
+  height: 73vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* CHOICES NAV */
+.choices-nav{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 60px;
+}
+.choice {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  transition: font-weight 0.2s, text-decoration 0.2s;
+  @media (max-width: 354px) {
+    font-size: 12px;
+  }
+}
+
+.choice:hover,
+.choice.active {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000;
+}
+
+/* DASHBOARD STYLES */
+.first-part{
+  background-color: rgb(253, 220, 188);
+  padding:5px 20px;
+  margin-top: 20px;
+  @media (min-width: 766px) {
+    width: 60%;
+    margin:30px auto 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(48, 48, 48, 0.384);
+  }
+  @media (min-width: 1078px) {
+    width: 50%;
+  }
+}
+.income-last{
+  span{
+    text-decoration: underline;
+  }
+}
+.text-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link{
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.review-score{
+  font-weight: 700;
+  font-size: 17px;
+  span{
+    font-weight: 300;
+  }
+}
+.ri-star-fill{
+  color: rgb(255, 174, 0);
+}
+.second-part{
+  background-color: rgb(255, 197, 140);
+  padding: 20px;
+  @media (min-width: 766px) {
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 2px 5px rgba(48, 48, 48, 0.384);
+  }
+  @media (min-width: 1078px) {
+    width: 50%;
+  }
+}
+.car-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.car-image img{
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.car-name{
+  font-weight: 700;
+  font-size: 12px;
+  span{
+    font-weight: 300;
+    font-size: 11px;
+  }
+}
+.img-text-wrapper{
+  display: flex;
+  gap: 10px;
+}
+.main-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.356);
+}
+.third-part{
+  background-color: rgb(255, 233, 211);
+  padding: 20px;
+  @media (min-width: 766px) {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(48, 48, 48, 0.384);
+  }
+  @media (min-width: 1078px) {
+    width: 50%;
+  }
+}
+/* VANS PAGE */
+.vans-text-wrapper{
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.van-name{
+  font-weight: 700;
+  font-size: 12px;
+  span{
+    font-weight: 300;
+    font-size: 11px;
+  }
+}
+.van-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.van-image img{
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.vans-content{
+  padding: 20px;
+  @media (min-width: 1078px) {
+    width: 50%;
+    margin: auto;
+  }
+}
+.back-link{
+  margin-left: 30px;
+  margin-top: 100px;
+  color: #000;
+}
+/* VANS DETAILS PAGE */
+.car-picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+.car-picture img{
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.van-type{
+  border: 2px solid rgb(255, 205, 172);
+  padding: 10px;
+  border-radius: 5px;
+  width: max-content;
+}
+.name-van{
+  font-size: 20px;
+  font-weight: 700;
+}
+.van-price{
+  margin-top: -15px;
+  font-weight: 600;
+  span{
+    font-weight: 300;
+  }
+}
+.van-details-wrapper{
+  display: flex;
+  gap: 20px;
+  /* background-color: aqua; */
+}
+.van-info{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: max-content;
+  margin:40px auto 30px;
+  box-shadow: 0px 0px 10px rgba(78, 78, 78, 0.507);
+  width: 85%;
+  @media (min-width:544px) {
+    width: 60%;
+  }
+}
+.van-details{
+  /* background-color: aqua; */
+  padding-top: 25px;
+}
+
+.selected-info{
+  p{
+    font-size: 13px;
+    color: #3d3d3d;
+    span{
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+.selection-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.selection-nav p {
+  cursor: pointer;
+}
+
+.selection-nav .active-tab {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.selection-nav p:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* INCOME PAGE */
+.graph-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(255, 239, 223);
+  padding: 30px;
+  border-radius: 10px;
+  @media (min-width: 602px) {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+  }
+}
+.graph-image img{
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.income-text-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  @media (min-width:620px) {
+    width: 50%;
+  }
+  p{
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+.income-content{
+  padding: 25px;
+}
+.transaction-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px rgba(59, 59, 59, 0.356);
+  @media (min-width:800px) {
+    width: 50%;
+    margin:10px auto;
+  }
+}
+/* REVIEWS PAGE */
+.reviews-wrapper{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  p{
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+.rates-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  @media (min-width: 700px) {
+    width: max-content;
+    height: 350px;
+  }
+}
+.rates-image img{
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviewer{
+  font-weight: 600;
+  span{
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+.review-messege{
+  font-size: 14px;
+  color: #3d3d3d;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding-bottom: 30px;
+}
+.reveiwes-page{
+  width: 80%;
+  margin: auto;
+}
